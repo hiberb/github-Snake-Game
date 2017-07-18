@@ -19,6 +19,7 @@ int a = 0;
 int speicher;  //Speichervariablen
 int speicherung;  //Speichervariablen
 int b;
+public Boolean anfang1 = false;
 
 
 void setup() 
@@ -35,9 +36,20 @@ void setup()
     {
         ausgabe();     //Startscreen erscheint am Anfang
     }
-    else   
+    else  
+    
     background(255);  
     fill(colorBlack);
+    
+   if (anfang1 == false)
+    {      
+     text("Drücke ''m'' um zu Spielen!",280,300);       
+     return; 
+    }
+    
+    else
+    
+    
     text("Aktuelle Punktzahl: ",160,580);    
     text(a,330,580);    
     for (int i=0;i<w;i++) line(i*bs,0,i*bs,height);
@@ -116,6 +128,7 @@ void setup()
         { 
           x.clear(); y.clear(); x.add(5);  y.add(5); gameover = false; //Auf die Standartwerte zurücksetzen
           anfang = false;
+          anfang1 = false;
       }    
     } 
   }
@@ -159,6 +172,14 @@ void setup()
         loop();
         fill(colorC);        
     }
+  }
+  
+   if (keyPressed) //Zum Weiterspielen
+    {
+    if (key == 'm')
+    {      
+        anfang1 = true;       
+    } 
   }
 }
  
@@ -224,6 +245,7 @@ void ausgabe()    //Der Startscreen der am Anfang erscheint
 // https://processing.org/examples/array.html -> Für 1-dimensionales Array
 // https://processing.org/examples/Color -> Für die Farben
 // http://www.farb-tabelle.de/de/farbtabelle.htm -> Für die Farbcodes
+// https://processing.org/reference/loop_.html  -> Pausierung des Spiels
 
 //////////////////////////////
 
