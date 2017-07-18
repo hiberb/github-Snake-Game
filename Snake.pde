@@ -124,7 +124,7 @@ void setup()
         background(0);
         fill(colorA); textSize(40); textAlign(CENTER); text("GAME OVER!",300,230);
         fill(colorA); textSize(40); textAlign(CENTER); text("|Enter|<- drücken ",300,350);
-        if(keyPressed&&key== ENTER) 
+        if(keyPressed && key== ENTER) 
         { 
           x.clear(); y.clear(); x.add(5);  y.add(5); gameover = false; //Auf die Standartwerte zurücksetzen
           anfang = false;
@@ -248,39 +248,3 @@ void ausgabe()    //Der Startscreen der am Anfang erscheint
 // https://processing.org/reference/loop_.html  -> Pausierung des Spiels
 
 //////////////////////////////
-
-  
-  
-  
-
-  
-  
-  
-
- 
- 
-
-
- 
-
-
- 
-
-      
-
-
-
-               
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
