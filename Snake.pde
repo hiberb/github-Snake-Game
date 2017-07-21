@@ -236,7 +236,7 @@ void ausgabe()    //Der Startscreen der am Anfang erscheint
           draw();     
       }  
   }
-//////////////////////////////
+///////////////////////////////
   
 // QUELLENANGABEN:
 
@@ -247,4 +247,4 @@ void ausgabe()    //Der Startscreen der am Anfang erscheint
 // http://www.farb-tabelle.de/de/farbtabelle.htm -> Für die Farbcodes
 // https://processing.org/reference/loop_.html  -> Pausierung des Spiels
 
-//////////////////////////////
+///////////////////////////////
