@@ -1,2 +1,2 @@
 # github-Snake-Game
-Processing SNAKE Game
+Processing SNAKE-Game
